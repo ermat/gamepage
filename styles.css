@@ -1,0 +1,134 @@
+@import url('https://fonts.cdnfonts.com/css/foco');
+
+/*
+#613d98
+#120c1c
+*/
+body{
+    margin: 0;
+    padding: 0;
+   /* font-family: Arial, sans-serif;*/
+   font-family: 'Foco', sans-serif;
+    color: whitesmoke;
+    background-color: #120c1c;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+h1 {
+    font-size: 74px;
+   
+}
+
+.hero-wrapper {
+    width: 100%;
+    display: flex;
+    position: center;
+    
+    
+    
+
+    
+
+}
+.greeting {
+    flex-grow: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+.hero-image {
+    /*width: 80vw;
+   
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/klubik_logo_clean_1280x650.png');
+    
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  
+
+    margin: 0px 15px 0px 15px;
+
+    */
+
+    width: 50vw; /* Define the width of the div */
+    padding-top: 28.125%; /* (650/1280)*100% to maintain the aspect ratio */
+
+   
+    /*
+    linear-gradient(rgba(18, 12, 28, 0) 0%, rgba(18, 12, 28, 0.80) 30%, #120c1c 40%)
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/klubik_logo_clean_1280x650.png');*/
+    background: linear-gradient(rgba(18, 12, 28, 0) 20%, rgba(18, 12, 28, 0.80) 90%), url('img/klubik_logo_clean_1280x650.png');
+    /*background:  url('img/klubik_logo_clean_1280x650.png');*/
+    background-size: contain;
+    background-repeat: no-repeat;
+    flex-grow: 3;
+    background-position: center center;
+    /*
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    overflow: hidden;
+    */
+
+    
+}
+
+.content {
+    width: 100vw;
+    display: flex;
+    padding: 20px;
+    background-position: center;
+    background-color: #613d98;
+}
+
+#game {
+    width: 100vw;
+    height: 100vh;
+}
+
+
+/*
+
+.menu {
+    position: -webkit-sticky; 
+    position: sticky;
+    top: 0;
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+    width: 100vw;
+    height: auto;
+}
+.menu a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    display: inline-block;
+}
+.menu a:hover {
+    background-color: #575757;
+}
+
+.content .text {
+    flex: 1;
+    padding: 20px;
+}
+.content .image {
+    flex: 1;
+    background-image: url('img/klubik_logo_clean_1280x650.png');
+    background-size: cover;
+   
+    background-position: center;
+}
+
+
+*/
