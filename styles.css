@@ -21,6 +21,16 @@ body{
     
 }
 
+.TrackListWidget_labelsAndSubtitle__IGHar {
+    background-color: aqua !important;
+}
+
+.content-container {
+    max-width: 1200px;
+    font-size: 20px;
+
+}
+
 h1 {
     font-size: 74px;
    
@@ -31,17 +41,14 @@ h1 {
     display: flex;
     position: center;
     
-    
-    
-
-    
-
 }
 .greeting {
     flex-grow: 2;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: start;
+    padding: 25px 50px;
   
 }
 
@@ -60,6 +67,8 @@ h1 {
     */
 
     width: 50vw; /* Define the width of the div */
+    min-width: 320px;
+    min-height: 162;
     padding-top: 28.125%; /* (650/1280)*100% to maintain the aspect ratio */
 
    
@@ -90,10 +99,58 @@ h1 {
     background-color: #613d98;
 }
 
-#game {
-    width: 100vw;
-    height: 100vh;
+.content-row {
+    display: flex;
+    flex-direction: row;
+
 }
+
+#game {
+    width: 100%;
+    height: 90vh 
+}
+
+#splaylist {
+    background-color: #613d98;
+}
+
+@media screen and (max-width: 979px) {
+    .content-row {
+        display: flex;
+        flex-direction: column;
+    
+    }
+
+    .hero-wrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        position: center;
+        
+    }
+
+    .hero-image {
+        padding: 0px;
+        width: 95%;
+        background-position: center center;
+        aspect-ratio: 1280 / 650;
+     
+    }
+
+    .greeting {
+        padding: 0px 20px;
+    }
+
+    .content-row {
+        
+        padding: 0px 20px 20px 20px;
+    }
+
+    #game {
+        width: 100vw;
+        height: 90vh 
+    }
+  }
 
 
 /*

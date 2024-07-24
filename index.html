@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Klubík fanpage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.cdnfonts.com/css/foco" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -20,35 +21,47 @@
     -->
 
     <div class="hero-wrapper">
-        <h1 class="greeting">Vitaj</h1>
+        
+        <div class="greeting">
+            <h1>Vitaj</h1>
+            <h2>Stránka je venovaná jednému špeciálnemu miestu. Nájdeš ho v&nbspPrešove ... ale aj&nbspv&nbspnejednom&nbsp<i class="fa fa-heart" style="font-size:32px;color:red"></i></h2>
+        </div>
         <div class="hero-image"></div>
     </div>
 
 
-    <div class="content">
-        <div class="text">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt arcu vel arcu fermentum, a dictum nisl condimentum. Maecenas eget aliquam metus. Curabitur eleifend sit amet lorem nec pharetra. Curabitur at eros felis. Cras hendrerit est nec urna vehicula, a hendrerit mauris lobortis.</p>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt arcu vel arcu fermentum, a dictum nisl condimentum. Maecenas eget aliquam metus. Curabitur eleifend sit amet lorem nec pharetra. Curabitur at eros felis. Cras hendrerit est nec urna vehicula, a hendrerit mauris lobortis.</p>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt arcu vel arcu fermentum, a dictum nisl condimentum. Maecenas eget aliquam metus. Curabitur eleifend sit amet lorem nec pharetra. Curabitur at eros felis. Cras hendrerit est nec urna vehicula, a hendrerit mauris lobortis.</p>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt arcu vel arcu fermentum, a dictum nisl condimentum. Maecenas eget aliquam metus. Curabitur eleifend sit amet lorem nec pharetra. Curabitur at eros felis. Cras hendrerit est nec urna vehicula, a hendrerit mauris lobortis.</p>
+    <div class="content-container">
+        <div id="splaylist" class="content-row">
+            <div class="content-box">
+                <h2>Hovorí sa, že hudba spája <i class="fa fa-music" aria-hidden="true" style="font-size:32px;color: #89b24c"></i>
+                </h2>
+                <p>Príkladom môže byť tento spoločne vyskladaný playlist. Vďaka autorom za tento nápad a trpezlivosť pri vkladaní skladieb.</p>     
+            </div>
+            <div class="content-box">
+                <iframe id="splayer" class="playerik" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/5AP5YknMMdQ3vYxamkEkuH?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+            
         </div>
-        <div class="text">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt arcu vel arcu fermentum, a dictum nisl condimentum. Maecenas eget aliquam metus. Curabitur eleifend sit amet lorem nec pharetra. Curabitur at eros felis. Cras hendrerit est nec urna vehicula, a hendrerit mauris lobortis.</p>
+        
+        <div id="game">
+            <div class="content-row">
+                <div class="content-box">
+                                <h2>Dobrodrúžstvo s ježkom <i class="fa fa-gamepad" aria-hidden="true"></i> 
+                                </h2>
+                                <p>Ježkovia sú nočné tvory. Cez deň teda najradšej spia. Pripojiť sa k (nielen) nočným dobrodrúžstvam jedného veľmi obľúbeného ježka možeš v hre Rendytúra <small>ver. (ba)BETA <i class="fa fa-motorcycle" aria-hidden="true"></i>. Zatiaľ vo fáze vývoja.</small> </p>
+                            </div>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt arcu vel arcu fermentum, a dictum nisl condimentum. Maecenas eget aliquam metus. Curabitur eleifend sit amet lorem nec pharetra. Curabitur at eros felis. Cras hendrerit est nec urna vehicula, a hendrerit mauris lobortis.</p>
+            </div>
+            
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt arcu vel arcu fermentum, a dictum nisl condimentum. Maecenas eget aliquam metus. Curabitur eleifend sit amet lorem nec pharetra. Curabitur at eros felis. Cras hendrerit est nec urna vehicula, a hendrerit mauris lobortis.</p>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt arcu vel arcu fermentum, a dictum nisl condimentum. Maecenas eget aliquam metus. Curabitur eleifend sit amet lorem nec pharetra. Curabitur at eros felis. Cras hendrerit est nec urna vehicula, a hendrerit mauris lobortis.</p>
+                <div>
+        <iframe id="game" src="./game-ready/index.html" title="Rendytura"></iframe> 
+    </div>
         </div>
-        <div class="image"></div>
     
     </div>
-    <div>
-        <iframe id="game" src="./20240720-1-Rendytura/index.html" title="Rendytura"></iframe> 
-    </div>
+
+
+
 </body>
 </html>
