@@ -10,8 +10,8 @@ gdjs.Untitled_32sceneCode.GDNewTiledSpriteObjects1= [];
 gdjs.Untitled_32sceneCode.GDNewTiledSpriteObjects2= [];
 gdjs.Untitled_32sceneCode.GDpickupObjects1= [];
 gdjs.Untitled_32sceneCode.GDpickupObjects2= [];
-gdjs.Untitled_32sceneCode.GDscoreObjects1= [];
-gdjs.Untitled_32sceneCode.GDscoreObjects2= [];
+gdjs.Untitled_32sceneCode.GDduckScoreObjects1= [];
+gdjs.Untitled_32sceneCode.GDduckScoreObjects2= [];
 gdjs.Untitled_32sceneCode.GDNewTiledSprite2Objects1= [];
 gdjs.Untitled_32sceneCode.GDNewTiledSprite2Objects2= [];
 gdjs.Untitled_32sceneCode.GDNewPanelSpriteObjects1= [];
@@ -42,6 +42,16 @@ gdjs.Untitled_32sceneCode.GD_9595Objects1= [];
 gdjs.Untitled_32sceneCode.GD_9595Objects2= [];
 gdjs.Untitled_32sceneCode.GD_95952Objects1= [];
 gdjs.Untitled_32sceneCode.GD_95952Objects2= [];
+gdjs.Untitled_32sceneCode.GDLeftArrowRoundButtonObjects1= [];
+gdjs.Untitled_32sceneCode.GDLeftArrowRoundButtonObjects2= [];
+gdjs.Untitled_32sceneCode.GDRightArrowRoundButtonObjects1= [];
+gdjs.Untitled_32sceneCode.GDRightArrowRoundButtonObjects2= [];
+gdjs.Untitled_32sceneCode.GDTopArrowRoundButtonObjects1= [];
+gdjs.Untitled_32sceneCode.GDTopArrowRoundButtonObjects2= [];
+gdjs.Untitled_32sceneCode.GDiconHedgehogObjects1= [];
+gdjs.Untitled_32sceneCode.GDiconHedgehogObjects2= [];
+gdjs.Untitled_32sceneCode.GDiconDuckObjects1= [];
+gdjs.Untitled_32sceneCode.GDiconDuckObjects2= [];
 
 
 gdjs.Untitled_32sceneCode.mapOfGDgdjs_9546Untitled_959532sceneCode_9546GDPlayerObjects1Objects = Hashtable.newFrom({"Player": gdjs.Untitled_32sceneCode.GDPlayerObjects1});
@@ -303,9 +313,6 @@ gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.Untitled_32sceneCode.GDPl
 {for(var i = 0, len = gdjs.Untitled_32sceneCode.GDPlayerObjects1.length ;i < len;++i) {
     gdjs.Untitled_32sceneCode.GDPlayerObjects1[i].getBehavior("PlatformerObject").simulateLeftKey();
 }
-}{for(var i = 0, len = gdjs.Untitled_32sceneCode.GDPlayerObjects1.length ;i < len;++i) {
-    gdjs.Untitled_32sceneCode.GDPlayerObjects1[i].getBehavior("Flippable").flipX(true);
-}
 }}
 
 }
@@ -329,9 +336,6 @@ if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.Untitled_32sceneCode.GDPlayerObjects1);
 {for(var i = 0, len = gdjs.Untitled_32sceneCode.GDPlayerObjects1.length ;i < len;++i) {
     gdjs.Untitled_32sceneCode.GDPlayerObjects1[i].getBehavior("PlatformerObject").simulateRightKey();
-}
-}{for(var i = 0, len = gdjs.Untitled_32sceneCode.GDPlayerObjects1.length ;i < len;++i) {
-    gdjs.Untitled_32sceneCode.GDPlayerObjects1[i].getBehavior("Flippable").flipX(false);
 }
 }}
 
@@ -410,6 +414,84 @@ gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.Untitled_32sceneCode.GDPl
 }
 
 
+{
+
+gdjs.copyArray(runtimeScene.getObjects("LeftArrowRoundButton"), gdjs.Untitled_32sceneCode.GDLeftArrowRoundButtonObjects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.Untitled_32sceneCode.GDLeftArrowRoundButtonObjects1.length;i<l;++i) {
+    if ( gdjs.Untitled_32sceneCode.GDLeftArrowRoundButtonObjects1[i].getBehavior("ButtonFSM").IsPressed((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
+        isConditionTrue_0 = true;
+        gdjs.Untitled_32sceneCode.GDLeftArrowRoundButtonObjects1[k] = gdjs.Untitled_32sceneCode.GDLeftArrowRoundButtonObjects1[i];
+        ++k;
+    }
+}
+gdjs.Untitled_32sceneCode.GDLeftArrowRoundButtonObjects1.length = k;
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.Untitled_32sceneCode.GDPlayerObjects1);
+{for(var i = 0, len = gdjs.Untitled_32sceneCode.GDPlayerObjects1.length ;i < len;++i) {
+    gdjs.Untitled_32sceneCode.GDPlayerObjects1[i].getBehavior("PlatformerObject").simulateLeftKey();
+}
+}{for(var i = 0, len = gdjs.Untitled_32sceneCode.GDPlayerObjects1.length ;i < len;++i) {
+    gdjs.Untitled_32sceneCode.GDPlayerObjects1[i].getBehavior("Flippable").flipX(true);
+}
+}}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("RightArrowRoundButton"), gdjs.Untitled_32sceneCode.GDRightArrowRoundButtonObjects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.Untitled_32sceneCode.GDRightArrowRoundButtonObjects1.length;i<l;++i) {
+    if ( gdjs.Untitled_32sceneCode.GDRightArrowRoundButtonObjects1[i].getBehavior("ButtonFSM").IsPressed((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
+        isConditionTrue_0 = true;
+        gdjs.Untitled_32sceneCode.GDRightArrowRoundButtonObjects1[k] = gdjs.Untitled_32sceneCode.GDRightArrowRoundButtonObjects1[i];
+        ++k;
+    }
+}
+gdjs.Untitled_32sceneCode.GDRightArrowRoundButtonObjects1.length = k;
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.Untitled_32sceneCode.GDPlayerObjects1);
+{for(var i = 0, len = gdjs.Untitled_32sceneCode.GDPlayerObjects1.length ;i < len;++i) {
+    gdjs.Untitled_32sceneCode.GDPlayerObjects1[i].getBehavior("PlatformerObject").simulateRightKey();
+}
+}{for(var i = 0, len = gdjs.Untitled_32sceneCode.GDPlayerObjects1.length ;i < len;++i) {
+    gdjs.Untitled_32sceneCode.GDPlayerObjects1[i].getBehavior("Flippable").flipX(false);
+}
+}}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("TopArrowRoundButton"), gdjs.Untitled_32sceneCode.GDTopArrowRoundButtonObjects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.Untitled_32sceneCode.GDTopArrowRoundButtonObjects1.length;i<l;++i) {
+    if ( gdjs.Untitled_32sceneCode.GDTopArrowRoundButtonObjects1[i].getBehavior("ButtonFSM").IsPressed((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
+        isConditionTrue_0 = true;
+        gdjs.Untitled_32sceneCode.GDTopArrowRoundButtonObjects1[k] = gdjs.Untitled_32sceneCode.GDTopArrowRoundButtonObjects1[i];
+        ++k;
+    }
+}
+gdjs.Untitled_32sceneCode.GDTopArrowRoundButtonObjects1.length = k;
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.Untitled_32sceneCode.GDPlayerObjects1);
+{for(var i = 0, len = gdjs.Untitled_32sceneCode.GDPlayerObjects1.length ;i < len;++i) {
+    gdjs.Untitled_32sceneCode.GDPlayerObjects1[i].getBehavior("PlatformerObject").simulateJumpKey();
+}
+}}
+
+}
+
+
 };
 
 gdjs.Untitled_32sceneCode.func = function(runtimeScene) {
@@ -421,8 +503,8 @@ gdjs.Untitled_32sceneCode.GDNewTiledSpriteObjects1.length = 0;
 gdjs.Untitled_32sceneCode.GDNewTiledSpriteObjects2.length = 0;
 gdjs.Untitled_32sceneCode.GDpickupObjects1.length = 0;
 gdjs.Untitled_32sceneCode.GDpickupObjects2.length = 0;
-gdjs.Untitled_32sceneCode.GDscoreObjects1.length = 0;
-gdjs.Untitled_32sceneCode.GDscoreObjects2.length = 0;
+gdjs.Untitled_32sceneCode.GDduckScoreObjects1.length = 0;
+gdjs.Untitled_32sceneCode.GDduckScoreObjects2.length = 0;
 gdjs.Untitled_32sceneCode.GDNewTiledSprite2Objects1.length = 0;
 gdjs.Untitled_32sceneCode.GDNewTiledSprite2Objects2.length = 0;
 gdjs.Untitled_32sceneCode.GDNewPanelSpriteObjects1.length = 0;
@@ -453,6 +535,16 @@ gdjs.Untitled_32sceneCode.GD_9595Objects1.length = 0;
 gdjs.Untitled_32sceneCode.GD_9595Objects2.length = 0;
 gdjs.Untitled_32sceneCode.GD_95952Objects1.length = 0;
 gdjs.Untitled_32sceneCode.GD_95952Objects2.length = 0;
+gdjs.Untitled_32sceneCode.GDLeftArrowRoundButtonObjects1.length = 0;
+gdjs.Untitled_32sceneCode.GDLeftArrowRoundButtonObjects2.length = 0;
+gdjs.Untitled_32sceneCode.GDRightArrowRoundButtonObjects1.length = 0;
+gdjs.Untitled_32sceneCode.GDRightArrowRoundButtonObjects2.length = 0;
+gdjs.Untitled_32sceneCode.GDTopArrowRoundButtonObjects1.length = 0;
+gdjs.Untitled_32sceneCode.GDTopArrowRoundButtonObjects2.length = 0;
+gdjs.Untitled_32sceneCode.GDiconHedgehogObjects1.length = 0;
+gdjs.Untitled_32sceneCode.GDiconHedgehogObjects2.length = 0;
+gdjs.Untitled_32sceneCode.GDiconDuckObjects1.length = 0;
+gdjs.Untitled_32sceneCode.GDiconDuckObjects2.length = 0;
 
 gdjs.Untitled_32sceneCode.eventsList0(runtimeScene);
 

@@ -12,13 +12,10 @@ body{
     color: whitesmoke;
     background-color: #120c1c;
     height: 100%;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-
-    
+    align-items: center;  
 }
 
 .TrackListWidget_labelsAndSubtitle__IGHar {
@@ -28,12 +25,10 @@ body{
 .content-container {
     max-width: 1200px;
     font-size: 20px;
-
 }
 
 h1 {
-    font-size: 74px;
-   
+    font-size: 74px;  
 }
 
 .hero-wrapper {
@@ -99,9 +94,15 @@ h1 {
     background-color: #613d98;
 }
 
+.narrow-p  {
+    max-width: 500px;
+}
+
 .content-row {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    padding: 15px;
 
 }
 
@@ -112,6 +113,22 @@ h1 {
 
 #splaylist {
     background-color: #613d98;
+    
+    
+}
+
+#music-text {
+    flex-grow: 1;
+}
+
+#splayer {
+    flex-grow: 4;
+    
+}
+
+.playerik {
+    height: 400px;
+    
 }
 
 @media screen and (max-width: 979px) {
@@ -148,8 +165,17 @@ h1 {
 
     #game {
         width: 100vw;
-        height: 90vh 
+        height: 80vh 
+        
     }
+
+    .narrow-p  {
+        max-width: 100%;
+    }
+  }
+
+  footer {
+    padding-top: 300px;
   }
 
 

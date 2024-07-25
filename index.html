@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="sk">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Klubík fanpage</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.cdnfonts.com/css/foco" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link href="https://fonts.cdnfonts.com/css/foco" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <!--
         <div class="menu">
         <a href="#home">Home</a>
@@ -21,47 +23,91 @@
     -->
 
     <div class="hero-wrapper">
-        
-        <div class="greeting">
-            <h1>Vitaj</h1>
-            <h2>Stránka je venovaná jednému špeciálnemu miestu. Nájdeš ho v&nbspPrešove ... ale aj&nbspv&nbspnejednom&nbsp<i class="fa fa-heart" style="font-size:32px;color:red"></i></h2>
-        </div>
-        <div class="hero-image"></div>
+      <div class="greeting">
+        <h1>Vitaj</h1>
+        <h2>
+          Stránka je venovaná špeciálnemu miestu. Nájdeš ho
+          v&nbspPrešove ... ale aj&nbspv&nbspnejednom&nbsp<i
+            class="fa fa-heart"
+            style="font-size: 32px; color: red"
+          ></i>
+        </h2>
+      </div>
+      <div class="hero-image"></div>
     </div>
-
 
     <div class="content-container">
-        <div id="splaylist" class="content-row">
-            <div class="content-box">
-                <h2>Hovorí sa, že hudba spája <i class="fa fa-music" aria-hidden="true" style="font-size:32px;color: #89b24c"></i>
-                </h2>
-                <p>Príkladom môže byť tento spoločne vyskladaný playlist. Vďaka autorom za tento nápad a trpezlivosť pri vkladaní skladieb.</p>     
-            </div>
-            <div class="content-box">
-                <iframe id="splayer" class="playerik" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/5AP5YknMMdQ3vYxamkEkuH?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-            </div>
-            
+      <div id="splaylist" class="content-row">
+        <div id="music-text" class="content-box">
+          <h2>
+            Hovorí sa, že hudba spája
+            <i
+              class="fa fa-music"
+              aria-hidden="true"
+              style="font-size: 32px; color: #89b24c"
+            ></i>
+          </h2>
+          <p class="narrow-p">
+            Príkladom môže byť tento spoločne vyskladaný playlist. Veľká vďaka patrí autorom za tento nápad a trpezlivosť pri vkladaní skladieb.
+          </p>
         </div>
-        
-        <div id="game">
-            <div class="content-row">
-                <div class="content-box">
-                                <h2>Dobrodrúžstvo s ježkom <i class="fa fa-gamepad" aria-hidden="true"></i> 
-                                </h2>
-                                <p>Ježkovia sú nočné tvory. Cez deň teda najradšej spia. Pripojiť sa k (nielen) nočným dobrodrúžstvam jedného veľmi obľúbeného ježka možeš v hre Rendytúra <small>ver. (ba)BETA <i class="fa fa-motorcycle" aria-hidden="true"></i>. Zatiaľ vo fáze vývoja.</small> </p>
-                            </div>
-
-            </div>
+        <div id="splayer" class="content-box">
+          <iframe style="width: 100%;"
             
-
-                <div>
-        <iframe id="game" src="./game-ready/index.html" title="Rendytura"></iframe> 
-    </div>
+            class="playerik"
+            style="border-radius: 12px"
+            src="https://open.spotify.com/embed/playlist/5AP5YknMMdQ3vYxamkEkuH?utm_source=generator&theme=0"
+           
+            
+            frameborder="0"
+            allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"
+          ></iframe>
         </div>
-    
+      </div>
+
+      <div id="game">
+        <div class="content-row">
+          <div class="content-box">
+            <h2>
+              Dobrodrúžstvo s ježkom
+              <i class="fa fa-gamepad" aria-hidden="true"></i>
+            </h2>
+            <p>
+              Ježkovia sú nočné tvory. Cez deň teda najradšej spia. Pripojiť sa
+              k nočným dobrodrúžstvam jedného veľmi obľúbeného ježka možeš v hre ?<strong>Rendytúra</strong>
+              <small
+                >ver. (ba)BETA
+                <i class="fa fa-motorcycle" aria-hidden="true"></i>. Zatiaľ vo
+                fáze vývoja.</small>
+            </p>
+            <p>Úloha: Hľadaj kačku v Káčku.</p>
+          </div>
+        </div>
+
+        <div>
+          <iframe
+            id="game"
+            src="./game-ready/index.html"
+            title="Rendytura"
+          ></iframe>
+        </div>
+      </div>
+   
+
     </div>
-
-
-
-</body>
+ <footer >
+      <p>
+        Icons by
+        <a href="http://fontawesome.io" target="_blank">Font Awesome</a>
+      </p>
+      <p>
+        "Pixel Art Hedgehog" by
+        <a href="https://dustdfg.itch.io/pixel-art-hedgehog">DustDFG</a> is
+        licensed under
+        <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.
+      </p>
+</footer>
+  </body>
 </html>
